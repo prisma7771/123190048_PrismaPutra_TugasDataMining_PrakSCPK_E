@@ -11,7 +11,7 @@ training = [3.81 3.5 5;
             3.9 4.2 2
 ];
 sampel = [3.15 3.5 5];
-group = [4; 2; 4; 3; 2; 3; 1; 2; 1; 3; 4;];
+group = [4; 2; 4; 3; 2; 3; 1; 2; 1; 3; 4];
 
 classification = fitcknn(training,group,'NumNeighbors',3);
 class = predict(classification,sampel);
